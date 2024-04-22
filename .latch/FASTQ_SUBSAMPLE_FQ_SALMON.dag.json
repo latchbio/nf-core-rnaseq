@@ -1,0 +1,618 @@
+{
+    "vertices": [
+        {
+            "content": {
+                "id": "480",
+                "label": "ch_reads",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "481",
+                "label": "ch_genome_fasta",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "482",
+                "label": "ch_transcript_fasta",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "483",
+                "label": "ch_gtf",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "484",
+                "label": "ch_index",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "485",
+                "label": "make_index",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "486",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "487",
+                "label": "make_index",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "488",
+                "label": "make_index",
+                "type": "Conditional",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"condition\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"condition\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "489",
+                "label": "SALMON_INDEX",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"SALMON_INDEX\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"index\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SALMON_INDEX\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SALMON_INDEX\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "index",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/salmon/index/main.nf",
+                "unaliased": "SALMON_INDEX",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "490",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "491",
+                "label": "Merge ch_index",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "492",
+                "label": "Merge ch_versions",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "493",
+                "label": "FQ_SUBSAMPLE",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"FQ_SUBSAMPLE\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"fastq\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"FQ_SUBSAMPLE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"FQ_SUBSAMPLE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "fastq",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/fq/subsample/main.nf",
+                "unaliased": "FQ_SUBSAMPLE",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "494",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "495",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "496",
+                "label": "A",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"value\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ConstantExpression\":\"A\"}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "497",
+                "label": "false",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"value\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ConstantExpression\":false}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "498",
+                "label": "SALMON_QUANT",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"SALMON_QUANT\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"results\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SALMON_QUANT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"json_info\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SALMON_QUANT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SALMON_QUANT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":2}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "results",
+                    "json_info",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/salmon/quant/main.nf",
+                "unaliased": "SALMON_QUANT",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "499",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "500",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_SUBSAMPLE_FQ_SALMON",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_subsample_fq_salmon/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        }
+    ],
+    "edges": [
+        {
+            "content": {
+                "label": "",
+                "src": "485",
+                "dest": "487",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "487",
+                "dest": "488",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "488",
+                "dest": "489",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "481",
+                "dest": "489",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "482",
+                "dest": "489",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "488",
+                "dest": "490",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "486",
+                "dest": "490",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "489",
+                "dest": "490",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "489",
+                "dest": "491",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "484",
+                "dest": "491",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "490",
+                "dest": "492",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "486",
+                "dest": "492",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "480",
+                "dest": "493",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "493",
+                "dest": "494",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "492",
+                "dest": "495",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "494",
+                "dest": "495",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "493",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "491",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "483",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "482",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "497",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "496",
+                "dest": "498",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "2",
+                "src": "498",
+                "dest": "499",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "495",
+                "dest": "500",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "499",
+                "dest": "500",
+                "branch": null
+            }
+        }
+    ]
+}

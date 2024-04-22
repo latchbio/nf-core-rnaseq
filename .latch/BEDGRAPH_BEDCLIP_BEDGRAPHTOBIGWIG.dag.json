@@ -1,0 +1,266 @@
+{
+    "vertices": [
+        {
+            "content": {
+                "id": "897",
+                "label": "bedgraph",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "898",
+                "label": "sizes",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "899",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "900",
+                "label": "UCSC_BEDCLIP",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"UCSC_BEDCLIP\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"bedgraph\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UCSC_BEDCLIP\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UCSC_BEDCLIP\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "bedgraph",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/ucsc/bedclip/main.nf",
+                "unaliased": "UCSC_BEDCLIP",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "901",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "902",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "903",
+                "label": "UCSC_BEDGRAPHTOBIGWIG",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"UCSC_BEDGRAPHTOBIGWIG\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"bigwig\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UCSC_BEDGRAPHTOBIGWIG\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UCSC_BEDGRAPHTOBIGWIG\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "bigwig",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/ucsc/bedgraphtobigwig/main.nf",
+                "unaliased": "UCSC_BEDGRAPHTOBIGWIG",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "904",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "905",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BEDGRAPH_BEDCLIP_BEDGRAPHTOBIGWIG",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        }
+    ],
+    "edges": [
+        {
+            "content": {
+                "label": "",
+                "src": "897",
+                "dest": "900",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "898",
+                "dest": "900",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "900",
+                "dest": "901",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "899",
+                "dest": "902",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "901",
+                "dest": "902",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "900",
+                "dest": "903",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "898",
+                "dest": "903",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "903",
+                "dest": "904",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "902",
+                "dest": "905",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "904",
+                "dest": "905",
+                "branch": null
+            }
+        }
+    ]
+}

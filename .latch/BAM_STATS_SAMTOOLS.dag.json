@@ -1,0 +1,268 @@
+{
+    "vertices": [
+        {
+            "content": {
+                "id": "865",
+                "label": "ch_bam_bai",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "866",
+                "label": "ch_fasta",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "867",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "868",
+                "label": "SAMTOOLS_STATS",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"SAMTOOLS_STATS\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"stats\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_STATS\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_STATS\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "stats",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/samtools/stats/main.nf",
+                "unaliased": "SAMTOOLS_STATS",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "869",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "870",
+                "label": "SAMTOOLS_FLAGSTAT",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"SAMTOOLS_FLAGSTAT\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"flagstat\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_FLAGSTAT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_FLAGSTAT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "flagstat",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/samtools/flagstat/main.nf",
+                "unaliased": "SAMTOOLS_FLAGSTAT",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "871",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "872",
+                "label": "SAMTOOLS_IDXSTATS",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"SAMTOOLS_IDXSTATS\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"idxstats\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_IDXSTATS\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"SAMTOOLS_IDXSTATS\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "idxstats",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/samtools/idxstats/main.nf",
+                "unaliased": "SAMTOOLS_IDXSTATS",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "873",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "BAM_STATS_SAMTOOLS",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/bam_stats_samtools/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        }
+    ],
+    "edges": [
+        {
+            "content": {
+                "label": "",
+                "src": "865",
+                "dest": "868",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "866",
+                "dest": "868",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "867",
+                "dest": "869",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "868",
+                "dest": "869",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "865",
+                "dest": "870",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "869",
+                "dest": "871",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "870",
+                "dest": "871",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "865",
+                "dest": "872",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "871",
+                "dest": "873",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "872",
+                "dest": "873",
+                "branch": null
+            }
+        }
+    ]
+}

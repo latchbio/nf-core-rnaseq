@@ -1,0 +1,1818 @@
+{
+    "vertices": [
+        {
+            "content": {
+                "id": "501",
+                "label": "reads",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "502",
+                "label": "skip_fastqc",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "503",
+                "label": "with_umi",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "504",
+                "label": "skip_umi_extract",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "505",
+                "label": "skip_trimming",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "506",
+                "label": "umi_discard_read",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "507",
+                "label": "min_trimmed_reads",
+                "type": "Input",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "508",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "509",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "510",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "511",
+                "label": "skip_fastqc",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "512",
+                "label": "skip_fastqc",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "513",
+                "label": "skip_fastqc",
+                "type": "Conditional",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"condition\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"condition\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "514",
+                "label": "FASTQC",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"FASTQC\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"html\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"FASTQC\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"zip\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"FASTQC\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"FASTQC\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":2}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "html",
+                    "zip",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/fastqc/main.nf",
+                "unaliased": "FASTQC",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "515",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "516",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "517",
+                "label": "Merge fastqc_html",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "518",
+                "label": "Merge fastqc_zip",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "519",
+                "label": "Merge ch_versions",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "520",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "521",
+                "label": "skip_umi_extract",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "522",
+                "label": "(with_umi && skip_umi_extract)",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"binaryOp\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},{\"ConstantExpression\":\"&&\"}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "523",
+                "label": "(with_umi && skip_umi_extract)",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "524",
+                "label": "(with_umi && skip_umi_extract)",
+                "type": "Conditional",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"condition\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"condition\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "525",
+                "label": "UMITOOLS_EXTRACT",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"UMITOOLS_EXTRACT\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"reads\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UMITOOLS_EXTRACT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"_latch_placeholder_log\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UMITOOLS_EXTRACT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"UMITOOLS_EXTRACT\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":2}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "reads",
+                    "log",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/umitools/extract/main.nf",
+                "unaliased": "UMITOOLS_EXTRACT",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "526",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "527",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "528",
+                "label": "(umi_discard_read in [1, 2])",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"binaryOp\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ListExpression\":[{\"ConstantExpression\":1},{\"ConstantExpression\":2}]},{\"ConstantExpression\":\"in\"}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "529",
+                "label": "(umi_discard_read in [1, 2])",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "530",
+                "label": "(umi_discard_read in [1, 2])",
+                "type": "Conditional",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"condition\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"condition\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "531",
+                "label": "map",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"map\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ClosureExpression\":{\"code\":{\"BlockStatement\":{\"statements\":[{\"ReturnStatement\":{\"TernaryExpression\":{\"booleanExpression\":{\"BooleanExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"meta\"},\"property\":\"single_end\"}}},\"trueExpression\":{\"ListExpression\":[{\"VariableExpression\":\"meta\"},{\"VariableExpression\":\"reads\"}]},\"falseExpression\":{\"ListExpression\":[{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"meta\"},\"operation\":\"+\",\"rightExpression\":{\"MapExpression\":[{\"MapEntryExpression\":{\"keyExpression\":{\"ConstantExpression\":\"single_end\"},\"valueExpression\":{\"ConstantExpression\":true}}}]}}},{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"reads\"},\"operation\":\"[\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"umi_discard_read\"},\"operation\":\"%\",\"rightExpression\":{\"ConstantExpression\":2}}}}}]}}}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[\"umi_discard_read\"]},\"labels\":[]}},\"parameters\":[\"meta\",\"reads\"]}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "532",
+                "label": "Merge umi_reads",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "533",
+                "label": "Merge umi_reads",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "534",
+                "label": "Merge umi_log",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "535",
+                "label": "Merge ch_versions",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "536",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "537",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "538",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "539",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "540",
+                "label": "Channel.empty()",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"empty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "541",
+                "label": "skip_trimming",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "542",
+                "label": "skip_trimming",
+                "type": "Generator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"toBoolean\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "543",
+                "label": "skip_trimming",
+                "type": "Conditional",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"condition\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"condition\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "544",
+                "label": "TRIMGALORE",
+                "type": "Process",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"TRIMGALORE\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"reads\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":0}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"_latch_placeholder_log\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":1}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"unpaired\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":2}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"html\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":3}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"zip\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":4}}}}},\"labels\":[]}}",
+                    "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"versions\"},\"operation\":\"=\",\"rightExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"TRIMGALORE\"},\"property\":\"out\"}},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":5}}}}},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    "reads",
+                    "log",
+                    "unpaired",
+                    "html",
+                    "zip",
+                    "versions"
+                ],
+                "module": "/Users/ayush/Desktop/workflows/rnaseq/modules/nf-core/trimgalore/main.nf",
+                "unaliased": "TRIMGALORE",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "545",
+                "label": "first",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"first\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "546",
+                "label": "mix",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"mix\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "547",
+                "label": "join",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"join\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"MapExpression\":[{\"MapEntryExpression\":{\"keyExpression\":{\"ConstantExpression\":\"remainder\"},\"valueExpression\":{\"ConstantExpression\":true}}}]},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "548",
+                "label": "map",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"map\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ClosureExpression\":{\"code\":{\"BlockStatement\":{\"statements\":[{\"IfStatement\":{\"booleanExpression\":{\"BooleanExpression\":{\"VariableExpression\":\"trim_log\"}},\"ifBlock\":{\"BlockStatement\":{\"statements\":[{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"num_reads\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"this\"},\"method\":\"getTrimGaloreReadsAfterFiltering\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"TernaryExpression\":{\"booleanExpression\":{\"BooleanExpression\":{\"PropertyExpression\":{\"objectExpression\":{\"VariableExpression\":\"meta\"},\"property\":\"single_end\"}}},\"trueExpression\":{\"VariableExpression\":\"trim_log\"},\"falseExpression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"trim_log\"},\"operation\":\"[\",\"rightExpression\":{\"ConstantExpression\":-1}}}}}]}}}}}},\"labels\":[]}},{\"ReturnStatement\":{\"ListExpression\":[{\"VariableExpression\":\"meta\"},{\"VariableExpression\":\"reads\"},{\"VariableExpression\":\"num_reads\"}]}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[\"num_reads\",\"getTrimGaloreReadsAfterFiltering\"]},\"labels\":[]}},\"elseBlock\":{\"BlockStatement\":{\"statements\":[{\"ReturnStatement\":{\"ListExpression\":[{\"VariableExpression\":\"meta\"},{\"VariableExpression\":\"reads\"},{\"BinaryExpression\":{\"leftExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"min_trimmed_reads\"},\"method\":\"toFloat\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"operation\":\"+\",\"rightExpression\":{\"ConstantExpression\":1}}}]}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[\"min_trimmed_reads\"]},\"labels\":[]}},\"labels\":[]}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[\"num_reads\",\"getTrimGaloreReadsAfterFiltering\",\"min_trimmed_reads\"]},\"labels\":[]}},\"parameters\":[\"meta\",\"reads\",\"trim_log\"]}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "549",
+                "label": "filter",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"filter\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ClosureExpression\":{\"code\":{\"BlockStatement\":{\"statements\":[{\"ReturnStatement\":{\"MethodCallExpression\":{\"objectExpression\":{\"ClassExpression\":{\"type\":\"nextflow.ast.LangHelpers\"}},\"method\":\"compareGreaterThanEqual\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"VariableExpression\":\"num_reads\"},{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"min_trimmed_reads\"},\"method\":\"toFloat\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}}]}}}}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[\"compareGreaterThanEqual\",\"min_trimmed_reads\"]},\"labels\":[]}},\"parameters\":[\"meta\",\"reads\",\"num_reads\"]}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "550",
+                "label": "map",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"map\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ClosureExpression\":{\"code\":{\"BlockStatement\":{\"statements\":[{\"ReturnStatement\":{\"ListExpression\":[{\"VariableExpression\":\"meta\"},{\"VariableExpression\":\"reads\"}]}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[]},\"labels\":[]}},\"parameters\":[\"meta\",\"reads\",\"num_reads\"]}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "551",
+                "label": "map",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"map\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ClosureExpression\":{\"code\":{\"BlockStatement\":{\"statements\":[{\"ReturnStatement\":{\"ListExpression\":[{\"VariableExpression\":\"meta\"},{\"VariableExpression\":\"num_reads\"}]}}],\"scope\":{\"declaredVariables\":[],\"referencedClassVariables\":[]},\"labels\":[]}},\"parameters\":[\"meta\",\"reads\",\"num_reads\"]}}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "552",
+                "label": "Merge trim_reads",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "553",
+                "label": "Merge trim_html",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "554",
+                "label": "Merge trim_read_count",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "555",
+                "label": "Merge trim_zip",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "556",
+                "label": "Merge trim_unpaired",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "557",
+                "label": "Merge trim_log",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "558",
+                "label": "Merge ch_versions",
+                "type": "Merge",
+                "statement": null,
+                "ret": null,
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        },
+        {
+            "content": {
+                "id": "559",
+                "label": "ifEmpty",
+                "type": "Operator",
+                "statement": "{\"ExpressionStatement\":{\"expression\":{\"BinaryExpression\":{\"leftExpression\":{\"VariableExpression\":\"res\"},\"operation\":\"=\",\"rightExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"MethodCallExpression\":{\"objectExpression\":{\"VariableExpression\":\"Channel\"},\"method\":\"placeholder\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[]}}}},\"method\":\"ifEmpty\",\"arguments\":{\"ArgumentListExpression\":{\"expressions\":[{\"ConstantExpression\":null}]}}}}}},\"labels\":[]}}",
+                "ret": [
+                    "{\"ExpressionStatement\":{\"expression\":{\"VariableExpression\":\"res\"},\"labels\":[]}}"
+                ],
+                "outputNames": [
+                    
+                ],
+                "module": "",
+                "unaliased": "",
+                "subWorkflowName": "FASTQ_FASTQC_UMITOOLS_TRIMGALORE",
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/rnaseq/subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/main.nf",
+                "cpu": null,
+                "memoryBytes": null
+            }
+        }
+    ],
+    "edges": [
+        {
+            "content": {
+                "label": "",
+                "src": "502",
+                "dest": "511",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "511",
+                "dest": "512",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "512",
+                "dest": "513",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "513",
+                "dest": "514",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "501",
+                "dest": "514",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "513",
+                "dest": "515",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "2",
+                "src": "514",
+                "dest": "515",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "513",
+                "dest": "516",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "508",
+                "dest": "516",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "515",
+                "dest": "516",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "514",
+                "dest": "517",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "509",
+                "dest": "517",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "514",
+                "dest": "518",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "510",
+                "dest": "518",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "516",
+                "dest": "519",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "508",
+                "dest": "519",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "504",
+                "dest": "521",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "503",
+                "dest": "522",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "521",
+                "dest": "522",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "522",
+                "dest": "523",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "523",
+                "dest": "524",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "525",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "501",
+                "dest": "525",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "526",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "2",
+                "src": "525",
+                "dest": "526",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "527",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "519",
+                "dest": "527",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "526",
+                "dest": "527",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "528",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "506",
+                "dest": "528",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "529",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "528",
+                "dest": "529",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "530",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "529",
+                "dest": "530",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "531",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "530",
+                "dest": "531",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "525",
+                "dest": "531",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "524",
+                "dest": "532",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "531",
+                "dest": "532",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "525",
+                "dest": "532",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "532",
+                "dest": "533",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "501",
+                "dest": "533",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "525",
+                "dest": "534",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "520",
+                "dest": "534",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "527",
+                "dest": "535",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "519",
+                "dest": "535",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "505",
+                "dest": "541",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "541",
+                "dest": "542",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "542",
+                "dest": "543",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "544",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "533",
+                "dest": "544",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "545",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "5",
+                "src": "544",
+                "dest": "545",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "546",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "535",
+                "dest": "546",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "545",
+                "dest": "546",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "547",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "0",
+                "src": "544",
+                "dest": "547",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "544",
+                "dest": "547",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "548",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "547",
+                "dest": "548",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "549",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "548",
+                "dest": "549",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "550",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "549",
+                "dest": "550",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "Conditional: (condition = Channel.placeholder()) - Branch: true",
+                "src": "543",
+                "dest": "551",
+                "branch": true
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "548",
+                "dest": "551",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "550",
+                "dest": "552",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "533",
+                "dest": "552",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "3",
+                "src": "544",
+                "dest": "553",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "537",
+                "dest": "553",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "551",
+                "dest": "554",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "540",
+                "dest": "554",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "4",
+                "src": "544",
+                "dest": "555",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "538",
+                "dest": "555",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "2",
+                "src": "544",
+                "dest": "556",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "536",
+                "dest": "556",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "1",
+                "src": "544",
+                "dest": "557",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "539",
+                "dest": "557",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "546",
+                "dest": "558",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "535",
+                "dest": "558",
+                "branch": null
+            }
+        },
+        {
+            "content": {
+                "label": "",
+                "src": "558",
+                "dest": "559",
+                "branch": null
+            }
+        }
+    ]
+}
